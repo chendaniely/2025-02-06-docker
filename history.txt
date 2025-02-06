@@ -1,0 +1,47 @@
+
+  502  git clone git@github.com:chendaniely/2025-02-06-docker.git
+  503  cd 2025-02-06-docker/
+  504  positron .
+  505  docker run   --rm   -it   -e PASSWORD="password"   -p 8787:8787   -v /$(pwd):/home/rstudio/work   rocker/rstudio:4.4.2
+  506  docker ps -a
+  507  docker run   --rm   -it   -e PASSWORD="password"   -p 8787:8787   -v /$(pwd):/home/rstudio/work   rocker/rstudio:4.4.2
+  508  docker run   --rm   -it   -e PASSWORD="password"   -p 8787:8787   -v /$(pwd):/home/rstudio/pizza
+  509    rocker/rstudio:4.4.2
+  510  docker run   --rm   -it   -e PASSWORD="password"   -p 8787:8787   -v /$(pwd):/home/rstudio/pizza   rocker/rstudio:4.4.2
+  511  ls
+  512  pwd
+  513  docker-compose up
+  514  docker-compose rm
+  515  docker-compose up
+  516  docker-compose rm
+  517  ls
+  518  docker build --tag mycontainer .
+  519  docker-compose up
+  520  docker-compose rm
+  521  Rscript -e "print('hello')"
+  522  docker build --tag mycontainer .
+  523  docker-compose up
+  524  docker-compose rm
+  525  docker login -u chendaniely
+  526  docker build --tag chendaniely/mycontainer .
+  527  docker build --tag chendaniely/mycontainer .
+  528  docker push chendaniely/mycontainer
+  529  git status
+  530  git add .
+  531  git status
+  532  git commit -m "docker, dockerfile, docker-compose"
+  533  git push origin main
+  534  git status
+  535  git add .
+  536  git commit -m "github actions"
+  537  git push origin main
+  538  git status
+  539  git add .
+  540  git commit -m "edit metadata"
+  541  git push origin main
+  542  git status
+  543  git diff
+  544  git status
+  545  git commit -am "run docker workflow when the workflow file changes"
+  546  git push origin main
+  547  history > history.txt
