@@ -1,0 +1,20 @@
+services:
+  analysis-env:
+    image: rocker/rstudio:4.4.2
+    ports:
+      - "8787:8787"
+    volumes:
+      - .:/home/rstudio/pizza
+    environment:
+      PASSWORD: "password"
+      DISABLE_AUTH: true
+
+  analysis-env2:
+    image: chendaniely/mycontainer
+    ports:
+      - "7777:8787"
+    volumes:
+      - .:/home/rstudio/pizza
+    environment:
+      PASSWORD: "password"
+      DISABLE_AUTH: true
